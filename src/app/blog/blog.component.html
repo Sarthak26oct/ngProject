@@ -1,8 +1,26 @@
 <section id="blog">
     <div class="container">
         <h1>BLOG</h1><br>
-        <article>
+        <!-- <article>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cupiditate molestias, incidunt quas vel officia labore, itaque ea dicta quibusdam atque at sequi excepturi quos iste, quasi amet! Officiis ea aspernatur cumque odit cupiditate perferendis tenetur rem enim excepturi sapiente! Laboriosam distinctio expedita aliquid corporis, quos quae obcaecati. Magni incidunt laboriosam facilis magnam aperiam dolorem tempore aut, dolorum amet assumenda, corporis ullam perspiciatis quisquam accusantium in culpa alias quos consequuntur omnis aliquid quis voluptatibus ratione! Molestiae voluptate beatae voluptatum, placeat voluptas molestias possimus ullam tempore vero, laborum expedita nobis tenetur doloremque odio. Sed, perferendis. Magnam placeat minus, ea, odio harum voluptatibus sunt rem, aperiam optio quam hic officiis molestias dolor obcaecati exercitationem maxime sed fuga deserunt debitis consequatur doloremque laudantium non? Facilis alias perferendis magni accusantium reprehenderit labore vero facere ad quis? Delectus suscipit labore repudiandae vero nemo officia aperiam rerum eum consequatur iste excepturi recusandae dolore repellat dolor, placeat eveniet assumenda impedit saepe reprehenderit voluptates et sit, quas, deleniti veritatis! Quos, molestias voluptatibus! Dolorem rem voluptas ad labore illum id hic, vero voluptate tempora, rerum quibusdam vitae, delectus fuga eum repellat aliquam dignissimos quasi mollitia iste culpa recusandae eius assumenda non. Sint laudantium aliquam, fugit repudiandae magni omnis? Delectus laudantium ipsa asperiores voluptatibus voluptas vero sequi, saepe architecto ex neque molestias dolorum voluptate! Aut nisi aperiam quidem dignissimos tempora pariatur facilis eligendi totam, provident error aliquid animi iste rem ad nihil odit quasi veniam labore minus placeat soluta excepturi ratione recusandae ipsa. Sed voluptates cum omnis optio illo nobis, enim voluptatem officia nihil soluta quibusdam rem, vel magni fugit. Qui quidem perspiciatis, hic tenetur dolore dicta explicabo provident, sit nesciunt, sed at sequi doloribus cupiditate temporibus iusto sint accusantium harum cum error ipsa nam dolorem iste! Dolores cum laborum iusto dolor doloribus ipsa illo. Accusantium aliquam laboriosam blanditiis sit?
-        </article>
+        </article> -->
+
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>URL</th>
+                <th>Thumbnail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let photo of photos$">
+                <td>{{ photo.title }}</td>
+                <td>{{ photo.url }}</td>
+                <td><img src="{{ photo.thumbnailUrl }}" alt=""></td>
+                <!-- <td>{{ photo.thumbnailUrl }}</td> -->
+              </tr>
+            </tbody>
+          </table>
     </div>
 </section>

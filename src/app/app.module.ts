@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { routes } from 'src/app.router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +17,6 @@ import { Home1Component } from './home1/home1.component';
 import { FormsModule } from '@angular/forms';
 import { CjavaComponent } from './cjava/cjava.component';
 import { AjavaComponent } from './ajava/ajava.component';
-import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -31,13 +31,13 @@ import { ProfileComponent } from './profile/profile.component';
     Home1Component,
     CjavaComponent,
     AjavaComponent,
-    ProfileComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     routes
   ],
   providers: [],

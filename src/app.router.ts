@@ -12,7 +12,6 @@ import { MernComponent } from './app/mern/mern.component';
 import { Home1Component } from './app/home1/home1.component';
 import { CjavaComponent } from './app/cjava/cjava.component';
 import { AjavaComponent } from './app/ajava/ajava.component';
-import { ProfileComponent } from './app/profile/profile.component';
 
 export const router: Routes = [
     { path: '', redirectTo: 'home1', pathMatch: 'full' }, //default page
@@ -25,7 +24,6 @@ export const router: Routes = [
     { path: 'mern', component: MernComponent},
     { path: 'home1', component: Home1Component},
     { path: 'cjava', component: CjavaComponent},
-    { path: 'profile', component: ProfileComponent},
     { path: 'ajava', component: AjavaComponent}
 ];
 

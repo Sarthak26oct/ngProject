@@ -92,7 +92,11 @@ footer p{
     font-size: 25px;
 } */
 
-.navbar ul li{
+/* .navbar ul li{
+    margin-right: 40px;
+} */
+
+.itm{
     margin-right: 40px;
 }
 
