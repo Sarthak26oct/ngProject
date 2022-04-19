@@ -2,3 +2,12 @@
     padding: 5rem 0;
     background: rgb(226, 226, 226);
 }
+
+
+img  {
+    height: 20vmax;
+    width: 30vmax;
+}
+.para {
+    text-align: start;
+}
