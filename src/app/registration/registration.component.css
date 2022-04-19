@@ -2,7 +2,28 @@
     padding: 5rem 0;
     background: rgb(226, 226, 226);
 }
-
+.input-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 2vmax 1vmax;
+}
+.input-container > input {
+    padding: 0.8vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;
+}
+.input-container > i {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: black;
+}
 /* .section div{
     text-align: center;
 } */
